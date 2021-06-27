@@ -1386,7 +1386,7 @@ vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # Thermal
-vendor/bin/thermal-engine
+vendor/bin/thermal-engine|9797282995ADBFA87A9BB765E272B63FDB3B36AF
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalfeature.so

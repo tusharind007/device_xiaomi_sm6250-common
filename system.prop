@@ -48,7 +48,10 @@ persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 ro.af.client_heap_size_kbyte=7168
 ro.config.vc_call_vol_steps=11
-ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.fluencetype=fluence
+
+#Buffer size in kbytes for compress offload playback
+audio.offload.buffer.size.kb=32
 
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
@@ -71,6 +74,7 @@ persist.vendor.qcom.bluetooth.enable.splita2dp=true
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
+vendor.bluetooth.soc=cherokee
 ro.vendor.bluetooth.wipower=false
 persist.vendor.bt.soc.scram_freqs=192
 persist.bt.a2dp.aac_disable=false
@@ -185,9 +189,12 @@ persist.vendor.radio.report_codec=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22,22
+ro.telephony.default_network=22,20
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true

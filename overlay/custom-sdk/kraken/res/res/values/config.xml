@@ -20,4 +20,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Whether device has a notch -->
     <bool name="config_haveNotch">true</bool>
+    
+    <!-- For example, a device with notification and battery lights that supports
+         pulsating and RGB control would set this config to 75. -->
+    <integer name="config_deviceLightCapabilities">224</integer>
 </resources>
